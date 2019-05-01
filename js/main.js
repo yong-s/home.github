@@ -63,13 +63,13 @@ $(document).ready(function () {
 				const item = images[i];
 				imgUrls.push(item.url);
 			}
-			var imgUrl = imgUrls[index];
+		/* 	var imgUrl = imgUrls[index];
 			var url = "https://www.bing.com"+imgUrl;
 			$panel.css("background", "url('https://ws1.sinaimg.cn/large/007erSAbly1fzjxq4hxxuj31hc0u0q79.jpg') center center no-repeat #666");
 			$panel.css("background-size", "cover");
 			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
 			sessionStorage.setItem("index",index);
-			});
+			}); */
 	}else{
 		if(index == 2)
 			index = 0;
