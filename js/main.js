@@ -70,6 +70,14 @@ $(document).ready(function () {
 			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
 			sessionStorage.setItem("index",index);
 			}); */
+			// 更换为本地路径
+			var imgUrl = imgUrls[index];
+			var url = "https://www.bing.com"+imgUrl;
+			$panel.css("background", "url(images/background.jpg) center center no-repeat #666");
+			$panel.css("background-size", "cover");
+			sessionStorage.setItem("imgUrls",JSON.stringify(imgUrls));
+			sessionStorage.setItem("index",index);
+			});
 	}else{
 		if(index == 2)
 			index = 0;
